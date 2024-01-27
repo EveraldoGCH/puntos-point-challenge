@@ -1,0 +1,35 @@
+.button {
+    padding: 0 2rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.disabled {
+    background-color: #c1c1c1;
+    color: grey;
+}
+
+.available {
+    background-color: blueviolet;
+    color: white;
+}
+
+.p {
+    margin: 0;
+}
+
+.button:hover {
+    transition: all 1.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.notClicked{
+    color: blueviolet;
+}
