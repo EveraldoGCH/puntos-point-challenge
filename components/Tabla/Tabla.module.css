@@ -1,0 +1,46 @@
+.Grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+.Column1 {
+    display: flex;
+    max-width: 120px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #E6E1E6;
+}
+
+.Column2Cont {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    border-radius: 10px;
+    background: #E6E1E6;
+    width: 50%;
+}
+
+.Column{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TitleColumn{
+    font-weight: 500;
+    color:#48454E;
+}
+
+.ColumnContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
