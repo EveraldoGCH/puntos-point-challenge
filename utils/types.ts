@@ -15,6 +15,7 @@ export interface GraficoPulso{
 }
 
 export interface FiltrosInitialState{
-    graficoPulso:GraficoPulso
+    graficoPulso:GraficoPulso;
+    filtroFechas:string;
 }
 

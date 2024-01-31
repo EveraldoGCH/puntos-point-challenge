@@ -18,9 +18,8 @@ const CardsDashBoard: React.FC = () => {
     })
 
     if (QueryCards.error) return <div>Request Failed</div>;
-	if (QueryCards.isLoading) return <div>Loading...</div>;
+	if (QueryCards.isLoading) return <div>Cargando...</div>;
 
-    let firstC;
     const CardsList = QueryCards.data.map((elm:CardResponse, i:number) => {
         return <Card mes={elm.mes}
             clientes={elm.clientes}
@@ -32,7 +31,8 @@ const CardsDashBoard: React.FC = () => {
             Facturado3={elm.Facturado3}
             isOpen={openAccordeon}
             firstCard={i == 0 ? true : false}
-            position={Number(i.toString() + "3")} />
+            position={Number(i.toString() + "3")} 
+            key={elm.mes}/>
     }
     )
     return (

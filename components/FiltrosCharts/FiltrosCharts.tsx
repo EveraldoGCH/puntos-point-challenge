@@ -1,36 +1,50 @@
 import styles from "./FiltrosCharts.module.css"
-import Chip from '@mui/material/Chip';
+import Chips from "../Chip/Chips";
 import InsertInvitationIcon from '@mui/icons-material/InsertInvitation';
 import { useAppSelector } from "../../redux/hooks";
 import CheckIcon from '@mui/icons-material/Check';
-
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 
 const FiltrosChart: React.FC = () => {
     const { graficoPulso } = useAppSelector(state => state.filtros)
-    const { pulso } = graficoPulso
+    const { grafico, pulso } = graficoPulso
 
     return (
         <article className={styles.FiltrosContainer}>
-            <div className={styles.Filtro}>{/* Filtro 1 */}
-                <Chip label="PULSO" className={`${styles.ChipCustom} ${styles.ChipCustomSelected}`} />
-                <Chip label="6M" variant="outlined" className={styles.ChipCustom} />
-                <Chip label="YTD/YTG" variant="outlined" className={styles.ChipCustom} />
-                <Chip label="1A" variant="outlined" className={styles.ChipCustom} />
-                <Chip label="MÁX" variant="outlined" className={styles.ChipCustom} />
-                <Chip icon={<InsertInvitationIcon />} label="Personalizado" variant="outlined" className={styles.ChipCustom} />
-            </div>
-            {pulso ?
-                <div className={styles.Filtro} style={{ width: "30%" }}>{/* Filtro 2 */}
-                    <Chip label="Todos" className={`${styles.ChipCustom} ${styles.ChipCustomSelected}`} />
-                    <Chip label="Sep" variant="outlined" className={styles.ChipCustom} />
-                    <Chip label="Oct" variant="outlined" className={styles.ChipCustom} />
-                    <Chip label="Nov" variant="outlined" className={styles.ChipCustom} />
+            <div className={styles.Filtro1Cont}>
+                <div className={styles.Filtro1}>{/* Filtro 1 */}
+                    <Chips label="HOY" />
+                    <Chips label="6M" />
+                    <Chips label="YTD/YTG" />
+                    <Chips label="1A" />
+                    <Chips label="MÁX" />
+                    <Chips label="Personalizado" icon={<InsertInvitationIcon />} />
+                </div>
+                {grafico?<div className={styles.detailsCont}>
+                    <RemoveRedEyeIcon color="inherit"/>
+                    <p>Ver detalles</p>
                 </div>
                 :
-                <div className={styles.Filtro} style={{ width: "30%" }}>{/* Filtro 2 */}
-                    <Chip label="Clientes" className={`${styles.ChipCustom} ${styles.ChipCustomSelected}`} icon={<CheckIcon />} />
-                    <Chip label="Transacciones" variant="outlined" className={styles.ChipCustom} />
+                ""}
+            </div>
+            {pulso ?
+                <div className={styles.Filtro} style={{ width: "30%" }}>{/* Filtro 2 pulso*/}
+                    <Chips label="Todos" />
+                    <Chips label="Sep" />
+                    <Chips label="Oct" />
+                    <Chips label="Nov" />
+                </div>
+                :
+                <div className={styles.Filtro2Cont}>{/* Filtro 2 grafico*/}
+                    <div className={styles.Filtro2}>
+                        <Chips label="Clientes" icon={<CheckIcon />} style={{ border: "1px solid gray" }} />
+                        <Chips label="Transacciones" style={{ border: "1px solid gray" }} />
+                    </div>
+                    {grafico?<div className={styles.Filtro2}>
+                        <Chips label="Dinero" style={{ border: "1px solid gray" }} />
+                        <Chips label="Cashback" style={{ border: "1px solid gray" }} />
+                    </div>:""}
                 </div>}
 
         </article>

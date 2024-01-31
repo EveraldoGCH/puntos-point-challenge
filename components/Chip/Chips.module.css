@@ -1,0 +1,9 @@
+/* Los chips nuevos de MaterialUI que estaban en el figma me tiraban error igual que con los charts */
+/* asi que cree estos custom */
+.ChipCustom {
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+}
