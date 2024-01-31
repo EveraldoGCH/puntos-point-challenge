@@ -1,0 +1,75 @@
+.ButtonCont {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Buttons {
+    width: 60%;
+    border: 2px solid blueviolet;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    border-radius: 30px;
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+    /* Agregamos gradiente */
+    transition: background-position 0.3s ease;
+    /* Agregamos transición a background-position */
+    overflow: hidden;
+}
+
+.ButtonRight {
+    background: linear-gradient(to right, blueviolet 50%, white 50%);
+    background-size: 200% 100%;
+}
+
+.ButtonLeft {
+    background: linear-gradient(to right, white 50%, blueviolet 50%);
+    background-size: 200% 100%;
+}
+
+.selectedRight {
+    background-color: blueviolet;
+    color: white;
+    background-position: left;
+}
+
+.selectedLeft {
+    background-color: blueviolet;
+    color: white;
+    background-position: right;
+    border-radius: 30px;
+}
+
+.unselectedRight {
+    background-color: white;
+    color: blueviolet;
+    background-position: right;
+}
+
+.unselectedLeft {
+    background-color: white;
+    color: blueviolet;
+    background-position: left;
+}
+
+.texto {
+    margin: 0;
+    font-weight: 500;
+}
+
+.Icon{
+    cursor: pointer;
+}

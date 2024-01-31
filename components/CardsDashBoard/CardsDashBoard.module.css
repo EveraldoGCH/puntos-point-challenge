@@ -1,0 +1,26 @@
+.DBoard2 {
+    width: 28%;
+    padding-left: 6px;
+
+}
+
+.CardsCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 6px;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.CardsContContracted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 6px;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}

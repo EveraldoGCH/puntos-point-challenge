@@ -1,0 +1,23 @@
+.FiltrosContainer {
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Filtro {
+    width: 60%;
+    display: flex;
+    gap: 10px;
+}
+/* Los chips nuevos de MaterialUI que estaban en el figma me tiraban error igual que con los charts */
+/* asi que cree estos custom */
+.ChipCustom {
+    border-radius: 8px;
+    border: none;
+}
+
+.ChipCustomSelected{
+    background: #E7DFF8;
+}

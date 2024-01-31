@@ -1,0 +1,12 @@
+.DashBoardContainer{
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+}
+
+.DBoard1{
+    width: 72%;
+    height: 200px;
+    background-color: beige;
+}
+

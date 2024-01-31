@@ -1,10 +1,13 @@
-import Header from "../../components/Header/Header";
+import { CardsDashBoard, ChartsDashBoard } from "../../components";
+import styles from "./Dashboard.module.css"
+
 
 const Dashboard: React.FC = () => {
     return (
-        <>
-        <Header/>
-        </>
+        <main className={styles.DashBoardContainer}>
+            <ChartsDashBoard/>
+            <CardsDashBoard />
+        </main>
     );
 }
 

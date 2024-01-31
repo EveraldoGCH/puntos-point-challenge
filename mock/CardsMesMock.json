@@ -1,0 +1,62 @@
+[
+    {
+        "id": "0",
+        "clientes": "81.240",
+        "VentasTotales": "30.000",
+        "MontoTotal": "$110.000",
+        "Acumulado": "$120.323",
+        "Facturado1": "$120.000",
+        "Facturado2": "$40.008",
+        "mes":"Septiembre"
+    },
+    {
+        "id": "1",
+        "clientes": "34.343",
+        "VentasTotales": "30.000",
+        "MontoTotal": "$110.000",
+        "Acumulado": "$120.323",
+        "Facturado1": "$120.000",
+        "Facturado2": "$40.008",
+        "mes":"Octubre"
+    },
+    {
+        "id": "2",
+        "clientes": "34.342",
+        "VentasTotales": "30.000",
+        "MontoTotal": "$110.000",
+        "Acumulado": "$120.323",
+        "Facturado1": "$120.000",
+        "Facturado2": "$40.008",
+        "mes":"Noviembre"
+    },
+    {
+        "id": "3",
+        "clientes": "760.432",
+        "VentasTotales": "30.000",
+        "MontoTotal": "$110.000",
+        "Acumulado": "$120.323",
+        "Facturado1": "$120.000",
+        "Facturado2": "$40.008",
+        "mes":"Diciembre"
+    },
+    {
+        "id": "4",
+        "clientes": "345.493",
+        "VentasTotales": "30.000",
+        "MontoTotal": "$110.000",
+        "Acumulado": "$120.323",
+        "Facturado1": "$120.000",
+        "Facturado2": "$40.008",
+        "mes":"Enero"
+    },
+    {
+        "id": "5",
+        "clientes": "57.032",
+        "VentasTotales": "30.000",
+        "MontoTotal": "$110.000",
+        "Acumulado": "$120.323",
+        "Facturado1": "$120.000",
+        "Facturado2": "$40.008",
+        "mes":"Febrero"
+    }
+]
