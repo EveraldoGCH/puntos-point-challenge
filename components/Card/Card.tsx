@@ -1,4 +1,5 @@
 import styles from "./Cards.module.css"
+import { obtenerNumeroDeMes } from "../../utils/helpers/fechas";
 import { CardProps } from "./type";
 
 
@@ -37,15 +38,15 @@ const Card: React.FC<CardProps> = ({
                     <p className={styles.Texto}>{Acumulado}</p>
                 </div>
                 <div className={styles.Row}>
-                    <p className={styles.Texto}>Facturado 01/10</p>
+                    <p className={styles.Texto}>Facturado 01/{obtenerNumeroDeMes(mes)}</p>
                     <p className={styles.Texto}>{Facturado1}</p>
                 </div>
                 <div className={styles.Row}>
-                    <p className={styles.Texto}>Facturado 10/10</p>
+                    <p className={styles.Texto}>Facturado 10/{obtenerNumeroDeMes(mes)}</p>
                     <p className={styles.Texto}>{Facturado2}</p>
                 </div>
                 <div className={styles.Row}>
-                    <p className={styles.Texto}>Facturado 20/10</p>
+                    <p className={styles.Texto}>Facturado 20/{obtenerNumeroDeMes(mes)}</p>
                     <p className={styles.Texto}>{Facturado3}</p>
                 </div>
 

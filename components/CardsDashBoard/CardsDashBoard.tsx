@@ -1,26 +1,19 @@
 import { useState } from "react";
 import { ButtonSlider, Card } from "../";
 import styles from "./CardsDashBoard.module.css"
-import { useMutation, useQuery } from "@tanstack/react-query";
 import { CardResponse } from "../../utils/types";
+import { CardsDashBoardProps } from "./type";
 
 
-const CardsDashBoard: React.FC = () => {
+const CardsDashBoard: React.FC<CardsDashBoardProps> = ({QueryData}) => {
     const [openAccordeon, setOpenAcc] = useState(true)
 
-    const fetchFn=async()=>{
-        const res = await fetch("/api/CardsMeses")
-        return res.json()
-    }
-    const QueryCards=useQuery({
-        queryKey:["cards"],
-        queryFn:fetchFn
-    })
+    
 
-    if (QueryCards.error) return <div>Request Failed</div>;
-	if (QueryCards.isLoading) return <div>Cargando...</div>;
+    if (QueryData.error) return <div>Request Failed</div>;
+	if (QueryData.isLoading) return <div>Cargando...</div>;
 
-    const CardsList = QueryCards.data.map((elm:CardResponse, i:number) => {
+    const CardsList = QueryData.data.map((elm:CardResponse, i:number) => {
         return <Card mes={elm.mes}
             clientes={elm.clientes}
             VentasTotales={elm.VentasTotales}

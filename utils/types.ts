@@ -1,3 +1,4 @@
+//------------------------Interfaces-----------------------------
 export interface CardResponse {
     clientes: string;
     VentasTotales: string;
@@ -17,14 +18,38 @@ export interface GraficoPulso{
 export interface FiltrosInitialState{
     graficoPulso:GraficoPulso;
     filtroFechas:string;
+    filtroFechasDias:string;
     filtClienteTransacc:string;
     filtDineroCashBack:string;
     filtroMes:string;
 }
 
+export interface DataChart{
+    labels:string[];
+    datasets:Datasets[];
+}
+
+export interface Datasets{
+        label:string;
+        data: number | number[];
+        backgroundColor:string;
+}
+
+export type FilterResults = {
+    [key: string]: {
+      tableTitle1: string;
+      titleColumns: string[];
+      // otras propiedades específicas de tu objeto interno
+    };
+  };
+
+//-------------------------------ENUMS------------------------------------
+
 export enum Filtros{
     FiltroFecha="Fecha",
+    FiltroFechaDias="FechaDias",
     FiltroMes="Mes",
     FiltroClienteTransacc="ClienteTransacc",
     FiltroDineroCashBack="DineroCashBack"
 }
+

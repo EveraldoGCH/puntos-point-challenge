@@ -1,9 +1,7 @@
 import styles from "./Chips.module.css"
-import { FiltrosChart } from "../"
-import BarChart from "../BarChart/BarChart";
 import { ChipsProps, Variant } from "./type";
 import Chip from '@mui/material/Chip';
-import { setFiltroClienteTransacc, setFiltroDineroCashBack, setFiltroFechas, setFiltroMes } from "../../redux/slices/FiltrosSlice";
+import { setFiltroClienteTransacc, setFiltroDineroCashBack, setFiltroFechas, setFiltroFechasDias, setFiltroMes } from "../../redux/slices/FiltrosSlice";
 import { useAppSelector, useAppDispatch } from "../../redux/hooks";
 import { Filtros } from "../../utils/types";
 
@@ -15,6 +13,9 @@ const Chips: React.FC<ChipsProps> = ({ label, icon, tipoFiltro, style }) => {
     const handleClick = () => {
         if(tipoFiltro===Filtros.FiltroFecha){
             dispatch(setFiltroFechas(label))
+        }
+        else if(tipoFiltro===Filtros.FiltroFechaDias){
+            dispatch(setFiltroFechasDias(label))
         }
         else if(tipoFiltro===Filtros.FiltroClienteTransacc){
             dispatch(setFiltroClienteTransacc(label))

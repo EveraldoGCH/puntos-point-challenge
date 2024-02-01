@@ -7,7 +7,10 @@
         "Acumulado": "$120.323",
         "Facturado1": "$120.000",
         "Facturado2": "$40.008",
-        "mes":"Septiembre"
+        "Facturado3": "$83.008",
+        "mes":"Enero",
+        "lastYearMonto":"949.233"
+
     },
     {
         "id": "1",
@@ -17,7 +20,9 @@
         "Acumulado": "$120.323",
         "Facturado1": "$120.000",
         "Facturado2": "$40.008",
-        "mes":"Octubre"
+        "Facturado3": "$80.008",
+        "mes":"Febrero",
+        "lastYearMonto":"949.233"
     },
     {
         "id": "2",
@@ -27,7 +32,9 @@
         "Acumulado": "$120.323",
         "Facturado1": "$120.000",
         "Facturado2": "$40.008",
-        "mes":"Noviembre"
+        "Facturado3": "$50.438",
+        "mes":"Marzo",
+        "lastYearMonto":"949.233"
     },
     {
         "id": "3",
@@ -37,7 +44,9 @@
         "Acumulado": "$120.323",
         "Facturado1": "$120.000",
         "Facturado2": "$40.008",
-        "mes":"Diciembre"
+        "Facturado3": "$80.008",
+        "mes":"Abril",
+        "lastYearMonto":"949.233"
     },
     {
         "id": "4",
@@ -47,7 +56,9 @@
         "Acumulado": "$120.323",
         "Facturado1": "$120.000",
         "Facturado2": "$40.008",
-        "mes":"Enero"
+        "Facturado3": "$60.008",
+        "mes":"Mayo",
+        "lastYearMonto":"949.233"
     },
     {
         "id": "5",
@@ -57,6 +68,8 @@
         "Acumulado": "$120.323",
         "Facturado1": "$120.000",
         "Facturado2": "$40.008",
-        "mes":"Febrero"
+        "Facturado3": "$40.008",
+        "mes":"Junio",
+        "lastYearMonto":"949.233"
     }
 ]

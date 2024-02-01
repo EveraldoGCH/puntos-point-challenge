@@ -7,7 +7,6 @@
 
 .Column1 {
     display: flex;
-    max-width: 120px;
     padding: 15px;
     flex-direction: column;
     align-items: center;
