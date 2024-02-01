@@ -1,0 +1,9 @@
+.DoubleChart{
+    width: 100%;
+    display: flex;
+}
+
+.Chart{
+    width: 50%;
+    padding: 0 8px;
+}
