@@ -5,9 +5,9 @@
         "VentasTotales": "30.000",
         "MontoTotal": "$110.000",
         "Acumulado": "$120.323",
-        "Facturado1": "$120.000",
-        "Facturado2": "$40.008",
-        "Facturado3": "$83.008",
+        "Facturado1": "382000",
+        "Facturado2": "48008",
+        "Facturado3": "83008",
         "mes":"Enero",
         "lastYearMonto":"949.233"
 
@@ -18,9 +18,9 @@
         "VentasTotales": "30.000",
         "MontoTotal": "$110.000",
         "Acumulado": "$120.323",
-        "Facturado1": "$120.000",
-        "Facturado2": "$40.008",
-        "Facturado3": "$80.008",
+        "Facturado1": "10000",
+        "Facturado2": "200000",
+        "Facturado3": "300000",
         "mes":"Febrero",
         "lastYearMonto":"949.233"
     },
@@ -30,46 +30,11 @@
         "VentasTotales": "30.000",
         "MontoTotal": "$110.000",
         "Acumulado": "$120.323",
-        "Facturado1": "$120.000",
-        "Facturado2": "$40.008",
-        "Facturado3": "$50.438",
+        "Facturado1": "217000",
+        "Facturado2": "40008",
+        "Facturado3": "50438",
         "mes":"Marzo",
         "lastYearMonto":"949.233"
-    },
-    {
-        "id": "3",
-        "clientes": "760.432",
-        "VentasTotales": "30.000",
-        "MontoTotal": "$110.000",
-        "Acumulado": "$120.323",
-        "Facturado1": "$120.000",
-        "Facturado2": "$40.008",
-        "Facturado3": "$80.008",
-        "mes":"Abril",
-        "lastYearMonto":"949.233"
-    },
-    {
-        "id": "4",
-        "clientes": "345.493",
-        "VentasTotales": "30.000",
-        "MontoTotal": "$110.000",
-        "Acumulado": "$120.323",
-        "Facturado1": "$120.000",
-        "Facturado2": "$40.008",
-        "Facturado3": "$60.008",
-        "mes":"Mayo",
-        "lastYearMonto":"949.233"
-    },
-    {
-        "id": "5",
-        "clientes": "57.032",
-        "VentasTotales": "30.000",
-        "MontoTotal": "$110.000",
-        "Acumulado": "$120.323",
-        "Facturado1": "$120.000",
-        "Facturado2": "$40.008",
-        "Facturado3": "$40.008",
-        "mes":"Junio",
-        "lastYearMonto":"949.233"
     }
+    
 ]

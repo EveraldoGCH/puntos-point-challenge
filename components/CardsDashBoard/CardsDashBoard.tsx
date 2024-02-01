@@ -3,6 +3,7 @@ import { ButtonSlider, Card } from "../";
 import styles from "./CardsDashBoard.module.css"
 import { CardResponse } from "../../utils/types";
 import { CardsDashBoardProps } from "./type";
+import { formatearNum } from "../../utils/helpers/formatNumbers";
 
 
 const CardsDashBoard: React.FC<CardsDashBoardProps> = ({QueryData}) => {
@@ -19,9 +20,9 @@ const CardsDashBoard: React.FC<CardsDashBoardProps> = ({QueryData}) => {
             VentasTotales={elm.VentasTotales}
             MontoTotal={elm.MontoTotal}
             Acumulado={elm.Acumulado}
-            Facturado1={elm.Facturado1}
-            Facturado2={elm.Facturado2}
-            Facturado3={elm.Facturado3}
+            Facturado1={"$"+formatearNum(elm.Facturado1)}
+            Facturado2={"$"+formatearNum(elm.Facturado2)}
+            Facturado3={"$"+formatearNum(elm.Facturado3)}
             isOpen={openAccordeon}
             firstCard={i == 0 ? true : false}
             position={Number(i.toString() + "3")} 

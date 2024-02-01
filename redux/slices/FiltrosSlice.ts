@@ -8,6 +8,7 @@ const initialState: FiltrosInitialState = {
         pulso: false
     },
     filtroFechas: "HOY",
+    filtroPulso:"PULSO",
     filtroFechasDias:"Todo",
     filtClienteTransacc: "Clientes",
     filtDineroCashBack: "",
@@ -24,6 +25,9 @@ export const FiltrosSlice = createSlice({
         setFiltroFechas: (state, action: PayloadAction<string>) => {
             state.filtroFechas = action.payload
         },
+        setFiltroPulso: (state, action: PayloadAction<string>) => {
+            state.filtroPulso = action.payload
+        },
         setFiltroFechasDias: (state, action: PayloadAction<string>) => {
             state.filtroFechasDias = action.payload
         },
@@ -39,4 +43,4 @@ export const FiltrosSlice = createSlice({
     }
 })
 
-export const { setGraficoPulsoFiltro, setFiltroFechas, setFiltroFechasDias, setFiltroClienteTransacc, setFiltroDineroCashBack, setFiltroMes } = FiltrosSlice.actions
+export const { setGraficoPulsoFiltro, setFiltroFechas, setFiltroPulso, setFiltroFechasDias, setFiltroClienteTransacc, setFiltroDineroCashBack, setFiltroMes } = FiltrosSlice.actions

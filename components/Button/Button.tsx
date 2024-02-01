@@ -12,7 +12,6 @@ const [clases, setClases]=useState("")
             setClases(`${styles.disabled} ${styles.button}`)
         }
         else{
-            console.log(ubicacion, title, ubicacion==title.toLocaleLowerCase())
             if(ubicacion==title.toLocaleLowerCase()){
                 setClases(`${styles.available} ${styles.button}`)
             }

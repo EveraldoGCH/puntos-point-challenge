@@ -1,7 +1,7 @@
 import styles from "./Chips.module.css"
 import { ChipsProps, Variant } from "./type";
 import Chip from '@mui/material/Chip';
-import { setFiltroClienteTransacc, setFiltroDineroCashBack, setFiltroFechas, setFiltroFechasDias, setFiltroMes } from "../../redux/slices/FiltrosSlice";
+import { setFiltroClienteTransacc, setFiltroDineroCashBack, setFiltroFechas, setFiltroFechasDias, setFiltroMes, setFiltroPulso } from "../../redux/slices/FiltrosSlice";
 import { useAppSelector, useAppDispatch } from "../../redux/hooks";
 import { Filtros } from "../../utils/types";
 
@@ -25,6 +25,9 @@ const Chips: React.FC<ChipsProps> = ({ label, icon, tipoFiltro, style }) => {
         }
         else if(tipoFiltro===Filtros.FiltroMes){
             dispatch(setFiltroMes(label))
+        }
+        else if(tipoFiltro===Filtros.FiltroPulso){
+            dispatch(setFiltroPulso(label))
         }
     }
 

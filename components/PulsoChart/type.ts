@@ -1,5 +1,5 @@
 import { UseQueryResult } from "@tanstack/react-query";
 
-export interface BarChartProps {
+export interface PulsoChartProps {
     QueryData: UseQueryResult<any>;
 }

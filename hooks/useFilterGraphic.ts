@@ -43,7 +43,6 @@ const useFilterGraphic = () => {
                         backgroundColor: elm.backgroundColor
                     };
                 });
-                console.log(data)
                 setLabels(label)
                 setData(data)
                 break;

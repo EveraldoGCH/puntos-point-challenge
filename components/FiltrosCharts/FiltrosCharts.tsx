@@ -14,16 +14,26 @@ const FiltrosChart: React.FC = () => {
     return (
         <article className={styles.FiltrosContainer}>
             <div className={styles.Filtro1Cont}>
-                <div className={styles.Filtro1}>{/* Filtro 1 */}
-                    <Chips label="HOY" tipoFiltro={Filtros.FiltroFecha} />
-                    <Chips label="7D" tipoFiltro={Filtros.FiltroFecha} />
-                    <Chips label="Este mes" tipoFiltro={Filtros.FiltroFecha} />
-                    <Chips label="6M" tipoFiltro={Filtros.FiltroFecha} />
-                    <Chips label="YTD/YTG" tipoFiltro={Filtros.FiltroFecha} />
-                    <Chips label="1A" tipoFiltro={Filtros.FiltroFecha} />
-                    <Chips label="MÁX" tipoFiltro={Filtros.FiltroFecha} />
-                    <Chips label="Personalizado" icon={<InsertInvitationIcon />} tipoFiltro={Filtros.FiltroFecha} />
-                </div>
+                {grafico ?
+                    <div className={styles.Filtro1}>{/* Filtro 1 */}
+                        <Chips label="HOY" tipoFiltro={Filtros.FiltroFecha} />
+                        <Chips label="7D" tipoFiltro={Filtros.FiltroFecha} />
+                        <Chips label="Este mes" tipoFiltro={Filtros.FiltroFecha} />
+                        <Chips label="6M" tipoFiltro={Filtros.FiltroFecha} />
+                        <Chips label="YTD/YTG" tipoFiltro={Filtros.FiltroFecha} />
+                        <Chips label="1A" tipoFiltro={Filtros.FiltroFecha} />
+                        <Chips label="MÁX" tipoFiltro={Filtros.FiltroFecha} />
+                        <Chips label="Personalizado" icon={<InsertInvitationIcon />} tipoFiltro={Filtros.FiltroFecha} />
+                    </div>
+                    :
+                    <div className={styles.Filtro1}>{/* Filtro 1 */}
+                        <Chips label="PULSO" tipoFiltro={Filtros.FiltroPulso} />
+                        <Chips label="6M" tipoFiltro={Filtros.FiltroPulso} />
+                        <Chips label="YTD/YTG" tipoFiltro={Filtros.FiltroPulso} />
+                        <Chips label="1A" tipoFiltro={Filtros.FiltroPulso} />
+                        <Chips label="MÁX" tipoFiltro={Filtros.FiltroPulso} />
+                        <Chips label="Personalizado" icon={<InsertInvitationIcon />} tipoFiltro={Filtros.FiltroFecha} />
+                    </div>}
                 {grafico ? <div className={styles.detailsCont}>
                     <RemoveRedEyeIcon color="inherit" />
                     <p className={styles.detalles}>Ver detalles</p>
@@ -51,9 +61,9 @@ const FiltrosChart: React.FC = () => {
             {pulso ?
                 <div className={styles.Filtro} style={{ width: "30%" }}>{/* Filtro 2 pulso*/}
                     <Chips label="Todos" tipoFiltro={Filtros.FiltroMes} />
-                    <Chips label="Sep" tipoFiltro={Filtros.FiltroMes} />
-                    <Chips label="Oct" tipoFiltro={Filtros.FiltroMes} />
-                    <Chips label="Nov" tipoFiltro={Filtros.FiltroMes} />
+                    <Chips label="Ene" tipoFiltro={Filtros.FiltroMes} />
+                    <Chips label="Feb" tipoFiltro={Filtros.FiltroMes} />
+                    <Chips label="Mar" tipoFiltro={Filtros.FiltroMes} />
                 </div>
                 :
                 <div className={styles.Filtro2Cont}>{/* Filtro 2 grafico*/}

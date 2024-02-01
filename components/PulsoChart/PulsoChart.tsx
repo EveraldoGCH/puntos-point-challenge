@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BarChartProps } from "./type";
+// import { BarChartProps } from "./type";
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -12,7 +12,8 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { DataChart } from '../../utils/types';
-import useFilterGraphic from '../../hooks/useFilterGraphic';
+import { PulsoChartProps } from './type';
+import useFilterPulso from '../../hooks/useFilterPulso';
 
 ChartJS.register(
     CategoryScale,
@@ -25,21 +26,16 @@ ChartJS.register(
 );
 
 
-const BarChart: React.FC<BarChartProps> = ({ QueryData }) => {
-    const { labelsChart, dataChart } = useFilterGraphic()
-
-    if (QueryData.error) return <div>Request Failed</div>;
+const PulsoChart: React.FC<PulsoChartProps> = ({QueryData}) => {
+    // if (QueryData.error) return <div>Request Failed</div>;
+    const { labelsChart, dataChart } = useFilterPulso(QueryData)
 
     const options = {
         responsive: true,
         plugins: {
             legend: {
                 position: 'bottom' as const,
-            },
-            // title: {
-            //     display: true,
-            //     text: 'Chart.js Bar Chart',
-            // },
+            }
         },
     };
 
@@ -56,4 +52,4 @@ const BarChart: React.FC<BarChartProps> = ({ QueryData }) => {
     );
 }
 
-export default BarChart;
+export default PulsoChart;

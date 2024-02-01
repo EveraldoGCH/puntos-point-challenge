@@ -18,6 +18,7 @@ export interface GraficoPulso{
 export interface FiltrosInitialState{
     graficoPulso:GraficoPulso;
     filtroFechas:string;
+    filtroPulso:string;
     filtroFechasDias:string;
     filtClienteTransacc:string;
     filtDineroCashBack:string;
@@ -47,6 +48,7 @@ export type FilterResults = {
 
 export enum Filtros{
     FiltroFecha="Fecha",
+    FiltroPulso="Pulso",
     FiltroFechaDias="FechaDias",
     FiltroMes="Mes",
     FiltroClienteTransacc="ClienteTransacc",
