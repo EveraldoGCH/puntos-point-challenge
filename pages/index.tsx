@@ -3,22 +3,18 @@ import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
-  const router = useRouter()
-  
-  return (
-    <>
-    </>
-  );
+  const router = useRouter();
+
+  return <></>;
 };
 
 export async function getServerSideProps() {
   return {
     redirect: {
-      destination: "/dashboard",
-      permanent: false
-    }
-  }
-
+      destination: '/dashboard',
+      permanent: false,
+    },
+  };
 }
 
 export default Home;

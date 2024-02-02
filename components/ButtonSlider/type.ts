@@ -1,6 +1,6 @@
-import { SetStateAction } from "react";
+import { SetStateAction } from 'react';
 
-export interface ButtonSliderProps{
-    setOpenAcc:SetStateAction<any>;
-    openAccordeon:boolean;
+export interface ButtonSliderProps {
+  setOpenAcc: SetStateAction<any>;
+  openAccordeon: boolean;
 }

@@ -1,5 +1,5 @@
-import { UseQueryResult } from "@tanstack/react-query";
+import { UseQueryResult } from '@tanstack/react-query';
 
-export interface ChartsDashBoardProps{
-    QueryData:UseQueryResult<any>;
+export interface ChartsDashBoardProps {
+  QueryData: UseQueryResult<any>;
 }
