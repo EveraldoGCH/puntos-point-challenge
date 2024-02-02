@@ -9,7 +9,7 @@ import PulsoChart from "../PulsoChart/PulsoChart";
 
 
 const ChartsDashBoard: React.FC<ChartsDashBoardProps> = ({QueryData}) => {
-    const { graficoPulso } = useAppSelector(state => state.filtros)
+    const { graficoPulso, filtroFechas } = useAppSelector(state => state.filtros)
     const { grafico, pulso } = graficoPulso
     const dispatch = useAppDispatch();
 
@@ -28,7 +28,7 @@ const ChartsDashBoard: React.FC<ChartsDashBoardProps> = ({QueryData}) => {
                     <p>Exportar Tabla</p>
                 </div>
             </section>
-            <Tabla/>
+            {filtroFechas!=="YTD/YTG"?<Tabla/>:""}
         </article>
     );
 }

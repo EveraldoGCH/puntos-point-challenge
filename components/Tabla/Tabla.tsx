@@ -3,6 +3,7 @@ import { useAppSelector, useAppDispatch } from "../../redux/hooks";
 import filterResults from "../../utils/filterResults/filterResults";
 import { FilterResults } from "../../utils/types";
 import { formatFilter } from "../../utils/helpers/formatFilters";
+import { Tooltip } from "@mui/material";
 
 
 const Tabla: React.FC = () => {
@@ -29,52 +30,108 @@ const Tabla: React.FC = () => {
                         <br />
                         <p>Semana</p>
                         <br />
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Miércoles" arrow>
                         <p>Miércoles</p>
+                        </Tooltip>
+                        <Tooltip title="Jueves" arrow>
                         <p>Jueves</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Sábado" arrow>
                         <p>Sábado</p>
+                        </Tooltip>
+                        <Tooltip title="Domingo" arrow>
                         <p>Domingo</p>
+                        </Tooltip>
                     </div>
                     <div className={styles.Column}>
                         <p>Columna 2</p>
                         <br />
                         <p>Semana</p>
                         <br />
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Miércoles" arrow>
                         <p>Miércoles</p>
+                        </Tooltip>
+                        <Tooltip title="Jueves" arrow>
                         <p>Jueves</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Sábado" arrow>
                         <p>Sábado</p>
+                        </Tooltip>
+                        <Tooltip title="Domingo" arrow>
                         <p>Domingo</p>
+                        </Tooltip>
                     </div>
                     <div className={styles.Column}>
                         <p>Columna 3</p>
                         <br />
                         <p>Semana</p>
                         <br />
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Miércoles" arrow>
                         <p>Miércoles</p>
+                        </Tooltip>
+                        <Tooltip title="Jueves" arrow>
                         <p>Jueves</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Sábado" arrow>
                         <p>Sábado</p>
+                        </Tooltip>
+                        <Tooltip title="Domingo" arrow>
                         <p>Domingo</p>
+                        </Tooltip>
                     </div>
                     <div className={styles.Column}>
                         <p>Total</p>
                         <br />
                         <p>Semana</p>
                         <br />
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Miércoles" arrow>
                         <p>Miércoles</p>
+                        </Tooltip>
+                        <Tooltip title="Jueves" arrow>
                         <p>Jueves</p>
+                        </Tooltip>
+                        <Tooltip title="00" arrow>
                         <p>00</p>
+                        </Tooltip>
+                        <Tooltip title="Sábado" arrow>
                         <p>Sábado</p>
+                        </Tooltip>
+                        <Tooltip title="Domingo" arrow>
                         <p>Domingo</p>
+                        </Tooltip>
                     </div>
                 </div>
             </section>
