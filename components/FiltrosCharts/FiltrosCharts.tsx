@@ -47,9 +47,9 @@ const FiltrosChart: React.FC = () => {
           </div>
         )}
         {grafico ? (
-          <div className={styles.detailsCont}>
+          <div className={styles.detailsCont + " gtm-verdetalles"}>
             <RemoveRedEyeIcon color="inherit" />
-            <p className={styles.detalles}>Ver detalles</p>
+            <p className={styles.detalles + " gtm-verdetalles"}>Ver detalles</p>
           </div>
         ) : (
           ''

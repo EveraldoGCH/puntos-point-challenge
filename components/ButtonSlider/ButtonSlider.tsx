@@ -25,8 +25,8 @@ const ButtonSlider: React.FC<ButtonSliderProps> = ({
     );
   };
   return (
-    <main className={styles.ButtonCont}>
-      <div className={styles.Buttons}>
+    <main className={`${styles.ButtonCont}`}>
+      <div className={styles.Buttons} id='gtm-graphic-pulse'>
         <div
           className={`${grafico ? `${styles.Button} ${styles.ButtonLeft} ${styles.selectedLeft}` : `${styles.Button} ${styles.ButtonLeft} ${styles.unselectedLeft}`}`}
           onClick={() => handleClick()}

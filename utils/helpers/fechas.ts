@@ -24,7 +24,6 @@ export function obtenerNumeroDeMes(mes: string) {
             return meses[mesLowerCase].toString();
         }
     } else {
-        console.error("Mes no válido");
         return null;
     }
 }

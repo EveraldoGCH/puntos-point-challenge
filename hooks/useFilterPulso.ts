@@ -33,14 +33,12 @@ const useFilterPulso = (QueryData:UseQueryResult<any>) => {
             case "PULSO":
                 label = QueryData.data.map((e:any)=>e.mes)
                 data = dataChart.map((elm, i) => {
-                    console.log("ELEMENTO", i, elm,[QueryData.data[i].Facturado1, QueryData.data[i].Facturado2, QueryData.data[i].Facturado3 ])
                     return {
                         label: elm.label,
                         data: QueryData.data.map((e:any)=>e["Facturado"+(i+1)]),
                         backgroundColor: elm.backgroundColor
                     };
                 });
-                console.log(QueryData.data[0])
                 setLabels(label)
                 setData(data)
                 break;

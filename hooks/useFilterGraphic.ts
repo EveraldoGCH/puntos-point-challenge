@@ -78,7 +78,6 @@ const useFilterGraphic = () => {
                         backgroundColor: elm.backgroundColor
                     };
                 });
-                console.log(data)
                 setLabels(label)
                 setData(data)
                 break;
@@ -86,7 +85,6 @@ const useFilterGraphic = () => {
     }
 
     useEffect(() => {
-        console.log("WTF",filtroFechas)
         LabelsFilter(filtroFechas)
     }, [filtroFechas, filtroFechasDias, filtClienteTransacc]);
 
