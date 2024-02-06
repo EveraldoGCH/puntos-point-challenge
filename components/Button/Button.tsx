@@ -17,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({ title, disabled }) => {
         setClases(`${styles.button} ${styles.notClicked}`);
       }
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

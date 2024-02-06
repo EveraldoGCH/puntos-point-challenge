@@ -23,8 +23,10 @@ const Tabla: React.FC = () => {
         <br />
         {filterResults[
           formatFilter(filtroFechas).toLowerCase()
-        ].titleColumns.map((elm) => (
-          <p className={styles.TitleColumn}>{elm}</p>
+        ].titleColumns.map((elm, i) => (
+          <p className={styles.TitleColumn} key={i}>
+            {elm}
+          </p>
         ))}
       </section>
       <section className={styles.Column2Cont}>

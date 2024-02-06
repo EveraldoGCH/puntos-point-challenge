@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Tabla from './Tabla';
 import filterResults from '../../utils/filterResults/filterResults';
@@ -20,16 +20,18 @@ describe('Tabla Component', () => {
     };
 
     // Renderizar el componente Tabla con los valores simulados
-    const { getByText } = render(
+    render(
       <Provider store={store}>
         <Tabla />
       </Provider>
     );
 
     // Verificar que el componente se renderice correctamente con los valores proporcionados
-    expect(getByText(filtros.filtroFechas)).toBeInTheDocument();
+    // eslint-disable-next-line testing-library/no-node-access
+    expect(screen.getByText(filtros.filtroFechas)).toBeInTheDocument();
+    // eslint-disable-next-line testing-library/no-node-access
     expect(
-      getByText(
+      screen.getByText(
         filterResults[formatFilter(filtros.filtroFechas).toLowerCase()]
           .tableTitle1
       )
