@@ -2,6 +2,6 @@
   "plugins": ["prettier"],
   "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "plugin:testing-library/react", "plugin:jest-dom/recommended"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "off"
   }
 }
