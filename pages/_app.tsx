@@ -29,19 +29,16 @@ function MyApp({ Component, pageProps }: AppProps) {
               href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
             />
           </Head>
-          <Script async src={"https://www.googletagmanager.com/gtag/js?id=GTM-MPG3M856"} />
+          <Script src={"https://www.googletagmanager.com/gtag/js?id=GTM-MPG3M856"} />
           <Script
-            dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || [];
+            strategy="afterInteractive">
+            {`window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag("config", "GTM-MPG3M856", {
                 page_path:window.location.pathname,
               })
-              `,
-            }
-            }
-            strategy="afterInteractive"
-          />
+              gtag("js", new Date())`}
+          </Script>
           <Header />
           <Component {...pageProps} />
         </QueryClientProvider>
